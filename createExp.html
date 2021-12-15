@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>signup</title>
+    <title>Login</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg  ">
       <div class="max-w-6xl mx-auto px-4 py-3">
         <div class="flex justify-between">
           <div>
@@ -97,6 +97,7 @@
               "
               ><i class="fas fa-bell"></i
             ></a>
+
             <a
             href="contact.html"
             class="
@@ -237,91 +238,42 @@
         });
       </script>
     </nav>
-    <div class="text-center mx-auto w-80 mt-16">
-      <p class="text-4xl font-bold">
-        Create A Free <span class="text-green-500">Account</span>
-      </p>
-      <small>If you already have an account please go to the log in page.</small>
-    </div>
-    <!-- login form -->
-    <div class="max-w-md mx-auto mb-32 mt-10 shadow-2xl bg-white p-10 rounded">
-      <div class="px-3 py-5">
-        <div class="text-center"></div>
-        <button
-          class="
-            h-12
-            w-full
-            bg-red-700
-            rounded
-            hover:bg-red-500
-            focus:outline-none
-            text-white
-            mb-3
-            text-base
-          "
-        >
-          <i class="fab fa-google mr-5 font-bold text-xl"></i> Sign up with
-          google
-        </button>
-        <div class="mt-5">
-          <hr class="h-0.5 mt-3" />
-          <div class="relative py-4 flex justify-center">
-            <span class="absolute px-4 rounded -top-4 left-30 bg-white"
-              >Or sign up with your email</span
-            >
-          </div>
-        </div>
-        <div class="relative mb-10 mt-10">
-          <span class="ml-2 bg-white px-2 absolute -top-3 text-sm">Full Name</span>
-          <input
-            class="transition duration-500 border h-12 rounded w-full px-2 mb-2 bg-gray-100"
-          />
-        </div>
-        <div class="relative mb-10 mt-10">
-            <span class="ml-2 bg-white px-2 absolute -top-3 text-sm">Email</span>
-            <input
-              class="transition duration-500 border h-12 rounded w-full px-2 mb-2 bg-gray-100"
-            />
-          </div>
-          <div class="relative mb-10 mt-10">
-            <span class="ml-2 bg-white px-2 absolute -top-3 text-sm">Password</span>
-            <input
-              class="transition duration-500 border h-12 rounded w-full px-2 mb-2 bg-gray-100"
-            />
-          </div>
-        <div class="relative mb-1">
-          <span class="ml-2 bg-white px-2 absolute -top-3 text-sm"
-            >Re-Enter Password</span
-          >
-          <input
-            class="transition duration-500 border h-12 rounded w-full px-2 mb-2 bg-gray-100"
-          />
-        </div>
-        <div class=" mb-3">
+    
+    <main>
+        <div class="lg:mt-20 sm:mt-28 container ml-28 mb-28 ">
+            <h1 class="text-green-800 font-bold text-3xl mb-16 border-b-2 border-green-800 inline-block pb-3 pr-24">Create Experience</h1>
             <div class="mb-10">
-                <input type="checkbox" class="mr-auto "/>
-                <label for="sign">I agree to the terms & conditions</label>
+                <label for="" class="text-gray-800 font-semibold text-base ">Designation:</label>
+                <input type="text" name="" id="" class="border-b border-green-800 focus:outline-none focus:border-green-400 ">
             </div>
-        
-          
-        </div>
-        <button
-          class="
-            h-12
-            w-full
-            bg-green-500
-            rounded
-            hover:bg-green-400
-            focus:outline-none
+            <div class="mb-10">
+                <label for="" class="text-gray-800 font-semibold text-base ">Organisation:</label>
+                <input type="text" name="" id="" class="border-b border-green-800 focus:outline-none focus:border-green-400">
+            </div>
+            <div class="mb-10">
+                <label for="" class="text-gray-800 font-semibold text-base">Description:</label>
+                <textarea name="" id="" cols="25" rows="5" class="border-b border-green-800 focus:outline-none focus:border-green-400"></textarea>
+            </div>
+            <div class="mb-10">
+                <label for="" class="text-gray-800 font-semibold text-base ">Joined at:</label>
+                <input type="date" name="" id="" class="border-b border-green-800 focus:outline-none focus:border-green-400 text-gray-800 font-semibold" >
+            </div>
+            <div class="mb-10">
+                <label for="" class="text-gray-800 font-semibold text-base ">Leaved at:</label>
+                <input type="date" name="" id="" class="border-b border-green-800 focus:outline-none focus:border-green-400 font-semibold">
+            </div>
+
+            <button class="py-2
+            px-5
+            font-medium
             text-white
-            mb-3
-          "
-        >
-          Sign Up
-        </button>
-        <p>Already in Luminar ? <a href="login.html" class="text-green-500">Sign in</a></p>
-      </div>
-    </div>
+            bg-green-800
+            rounded
+            hover:bg-green-500
+            transition
+            duration-300">Create</button>
+        </div>
+    </main>
     <!-- footer -->
     <footer class="bg-green-900 dark:bg-gray-800">
       <div class="container pt-24 px-6 pb-8 mx-auto">
