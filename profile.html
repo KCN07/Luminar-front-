@@ -250,7 +250,7 @@
         <div class="md:col-span-2 col-span-3 p-2">
             <div class="mb-5">
                 <h1 class="text-green-800 font-bold text-3xl mb-2">User Profile</h1>
-                <a href="updateuser.html" class="text-green-800 hover:text-green-500 underline">Update User</a>
+                <a href="updateProfile.html" class="text-green-800 hover:text-green-500 underline">Update User</a>
             </div>
             <div class=" mb-10">
                 <h3 class="text-green-800 font-bold text-2xl mb-1">Kaniz Fatema</h3>
@@ -303,9 +303,49 @@
           </div>
 
           <div class="pl-3 mt-6 text-white">
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</button>
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Delete</button>
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
           </div>
+<!-- Modal -->
+          <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+            <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+            
+            <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+              
+              <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                </svg>
+                <span class="text-sm">(Esc)</span>
+              </div>
+        
+              <!-- Add margin if you want to see some of the overlay behind the modal-->
+              <div class="modal-content py-4 text-left px-6">
+                <!--Title-->
+                <div class="flex justify-between items-center pb-3">
+                  <p class="text-2xl font-bold text-green-800">Delete experience !</p>
+                  <div class="modal-close cursor-pointer z-50">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                      <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                    </svg>
+                  </div>
+                </div>
+        
+                <!--Body-->
+                <p>Are you sure you want to delete this experience ?</p>
+               
+        
+                <!--Footer-->
+                <div class="flex justify-end pt-2 mt-5">
+                  <button class="px-4 bg-transparent py-2 rounded-lg text-green-800 hover:bg-red-500 hover:text-white mr-2">Delete</button>
+                  
+                  <button class="modal-close px-4  py-2 rounded-lg bg-green-800 text-white mr-2 hover:bg-green-500">Cancle</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
         </div>
         <div class="mb-10 ml-5">
           <h3 class="text-green-800 font-bold text-2xl mb-1">. Network Security</h3>
@@ -323,8 +363,8 @@
           </div>
 
           <div class="pl-3 mt-6 text-white">
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</button>
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Delete</button>
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
           </div>
         </div>
         <div class="mb-10 ml-5">
@@ -343,8 +383,8 @@
           </div>
 
           <div class="pl-3 mt-6 text-white">
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</button>
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Delete</button>
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
           </div>
         </div>
 
@@ -354,14 +394,14 @@
       <div class="border border-green-800 mx-auto lg:max-w-6xl md:max-w-3xl max-w-xs p-3 rounded-md mb-5">
         <div class="mb-5 ">
             <h1 class="text-green-800 font-bold text-3xl mb-2">Skills</h1>
-            <a href="#" class="text-green-800 hover:text-green-500 underline">Add Skills</a>
+            <a href="createExp.html" class="text-green-800 hover:text-green-500 underline">Add Skills</a>
         </div>
 
         <div class="mb-10 ml-5">
-          <h3 class="text-green-800 font-bold text-2xl mb-1">. Software Engineer</h3>
-          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Enosis Solution</h6>
-          <p class="text-gray-700 pl-3 lg:max-w-2xl">
-              I have working here since 2020. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Django-Rest-Framework</h3>
+          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Model serializer, Moder viewset</h6>
+          <!-- <p class="text-gray-700 pl-3 lg:max-w-2xl">
+            I have working here since 2020. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
           <div class="flex">
             <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Joined at: <span class="text-gray-700">1st january, 2020</span></h6>
             <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Leaved at: <span class="text-gray-700">1st january, 2021</span></h6>
@@ -370,11 +410,51 @@
               <label for="checkbox" class="text-gray-700 font-semibold text-base">I currently work here.</label>
             </div>
             
-          </div>
+          </div> -->
 
           <div class="pl-3 mt-6 text-white">
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</button>
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Delete</button>
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
+          </div>
+        </div>
+        <div class="mb-10 ml-5">
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Problem solving</h3>
+          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">2500+ problem solved.</h6>
+          <!-- <p class="text-gray-700 pl-3 lg:max-w-2xl">
+            I have working here since 2020. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
+          <div class="flex">
+            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Joined at: <span class="text-gray-700">1st january, 2020</span></h6>
+            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Leaved at: <span class="text-gray-700">1st january, 2021</span></h6>
+            <div>
+              <input type="checkbox" class="checked:bg-green-800 m-1.5 ml-5">
+              <label for="checkbox" class="text-gray-700 font-semibold text-base">I currently work here.</label>
+            </div>
+            
+          </div> -->
+
+          <div class="pl-3 mt-6 text-white">
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
+          </div>
+        </div>
+        <div class="mb-10 ml-5">
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Django</h3>
+          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Web framework developed by python.</h6>
+          <!-- <p class="text-gray-700 pl-3 lg:max-w-2xl">
+            I have working here since 2020. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
+          <div class="flex">
+            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Joined at: <span class="text-gray-700">1st january, 2020</span></h6>
+            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Leaved at: <span class="text-gray-700">1st january, 2021</span></h6>
+            <div>
+              <input type="checkbox" class="checked:bg-green-800 m-1.5 ml-5">
+              <label for="checkbox" class="text-gray-700 font-semibold text-base">I currently work here.</label>
+            </div>
+            
+          </div> -->
+
+          <div class="pl-3 mt-6 text-white">
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
           </div>
         </div>
 
@@ -384,15 +464,17 @@
       <div class="border border-green-800 mx-auto lg:max-w-6xl md:max-w-3xl max-w-xs p-3 rounded-md mb-5">
         <div class="mb-5">
             <h1 class="text-green-800 font-bold text-3xl mb-2">Achievements</h1>
-            <a href="#" class="text-green-800 hover:text-green-500 underline">Add Achievements</a>
+            <a href="createExp.html" class="text-green-800 hover:text-green-500 underline">Add Achievements</a>
         </div>
 
         <div class="mb-10 ml-5">
-          <h3 class="text-green-800 font-bold text-2xl mb-1">. Software Engineer</h3>
-          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Enosis Solution</h6>
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Expert in CF</h3>
+          <!-- <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Enosis Solution</h6> -->
           <p class="text-gray-700 pl-3 lg:max-w-2xl">
-              I have working here since 2020. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
-          <div class="flex">
+            montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus
+            commodo viverra.
+            </p>
+          <!-- <div class="flex">
             <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Joined at: <span class="text-gray-700">1st january, 2020</span></h6>
             <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Leaved at: <span class="text-gray-700">1st january, 2021</span></h6>
             <div>
@@ -400,11 +482,33 @@
               <label for="checkbox" class="text-gray-700 font-semibold text-base">I currently work here.</label>
             </div>
             
-          </div>
+          </div> -->
 
           <div class="pl-3 mt-6 text-white">
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</button>
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Delete</button>
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
+          </div>
+        </div>
+        <div class="mb-10 ml-5">
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. 3rd in DIU Take-off Programming Contest</h3>
+          <!-- <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Enosis Solution</h6> -->
+          <p class="text-gray-700 pl-3 lg:max-w-2xl">
+            montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus
+            commodo viverra.
+            </p>
+          <!-- <div class="flex">
+            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Joined at: <span class="text-gray-700">1st january, 2020</span></h6>
+            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Leaved at: <span class="text-gray-700">1st january, 2021</span></h6>
+            <div>
+              <input type="checkbox" class="checked:bg-green-800 m-1.5 ml-5">
+              <label for="checkbox" class="text-gray-700 font-semibold text-base">I currently work here.</label>
+            </div>
+            
+          </div> -->
+
+          <div class="pl-3 mt-6 text-white">
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
           </div>
         </div>
 
@@ -414,27 +518,61 @@
       <div class="border border-green-800 mx-auto lg:max-w-6xl md:max-w-3xl max-w-xs p-3 rounded-md mb-5">
         <div class="mb-5">
             <h1 class="text-green-800 font-bold text-3xl mb-2">Projects</h1>
-            <a href="#" class="text-green-800 hover:text-green-500 underline">Add Projects</a>
+            <a href="createExp.html" class="text-green-800 hover:text-green-500 underline">Add Projects</a>
         </div>
 
         <div class="mb-10 ml-5">
-          <h3 class="text-green-800 font-bold text-2xl mb-1">. Software Engineer</h3>
-          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Enosis Solution</h6>
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Devsearch</h3>
+          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">A project using python, node, mongo</h6>
           <p class="text-gray-700 pl-3 lg:max-w-2xl">
-              I have working here since 2020. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
+              Devsearch is a international project developed for beginner developers. By using it they can easily find any reources and guidance.</p>
           <div class="flex">
-            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Joined at: <span class="text-gray-700">1st january, 2020</span></h6>
-            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Leaved at: <span class="text-gray-700">1st january, 2021</span></h6>
-            <div>
-              <input type="checkbox" class="checked:bg-green-800 m-1.5 ml-5">
-              <label for="checkbox" class="text-gray-700 font-semibold text-base">I currently work here.</label>
-            </div>
+            
+            <a href="#" class="font-semibold text-base mb-2 text-green-800 pl-3">Live Site</a>
+            <a href="#" class="font-semibold text-base mb-2 text-green-800 pl-3">Source</a>
+            
             
           </div>
 
           <div class="pl-3 mt-6 text-white">
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</button>
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Delete</button>
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
+          </div>
+        </div>
+        <div class="mb-10 ml-5">
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Green Division</h3>
+          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">A project using python, django, react, express, mongo</h6>
+          <p class="text-gray-700 pl-3 lg:max-w-2xl">
+            Green Division is a international project developed for beginner problem solvers. By using it they can easily find any reources and guidance.</p>
+          <div class="flex">
+            
+            <a href="#" class="font-semibold text-base mb-2 text-green-800 pl-3">Live Site</a>
+            <a href="#" class="font-semibold text-base mb-2 text-green-800 pl-3">Source</a>
+            
+            
+          </div>
+
+          <div class="pl-3 mt-6 text-white">
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
+          </div>
+        </div>
+        <div class="mb-10 ml-5">
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Luminar</h3>
+          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">A project using python, django, react, express, mongo</h6>
+          <p class="text-gray-700 pl-3 lg:max-w-2xl">
+            Green Division is a international project developed for beginner problem solvers. By using it they can easily find any reources and guidance.</p>
+          <div class="flex">
+            
+            <a href="#" class="font-semibold text-base mb-2 text-green-800 pl-3">Live Site</a>
+            <a href="#" class="font-semibold text-base mb-2 text-green-800 pl-3">Source</a>
+            
+            
+          </div>
+
+          <div class="pl-3 mt-6 text-white">
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
           </div>
         </div>
 
@@ -444,15 +582,15 @@
       <div class="border border-green-800 mx-auto lg:max-w-6xl md:max-w-3xl max-w-xs p-3 rounded-md mb-5">
         <div class="mb-5">
             <h1 class="text-green-800 font-bold text-3xl mb-2">Interests</h1>
-            <a href="#" class="text-green-800 hover:text-green-500 underline">Add Interests</a>
+            <a href="createExp.html" class="text-green-800 hover:text-green-500 underline">Add Interests</a>
         </div>
 
         <div class="mb-10 ml-5">
-          <h3 class="text-green-800 font-bold text-2xl mb-1">. Software Engineer</h3>
-          <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Enosis Solution</h6>
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Cycling</h3>
+          <!-- <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Enosis Solution</h6> -->
           <p class="text-gray-700 pl-3 lg:max-w-2xl">
-              I have working here since 2020. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
-          <div class="flex">
+              I like cycling from my childhood. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
+          <!-- <div class="flex">
             <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Joined at: <span class="text-gray-700">1st january, 2020</span></h6>
             <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Leaved at: <span class="text-gray-700">1st january, 2021</span></h6>
             <div>
@@ -460,11 +598,31 @@
               <label for="checkbox" class="text-gray-700 font-semibold text-base">I currently work here.</label>
             </div>
             
-          </div>
+          </div> -->
 
           <div class="pl-3 mt-6 text-white">
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</button>
-            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Delete</button>
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
+          </div>
+        </div>
+        <div class="mb-10 ml-5">
+          <h3 class="text-green-800 font-bold text-2xl mb-1">. Table Tennis</h3>
+          <!-- <h6 class="font-semibold text-base mb-2 text-gray-700 pl-3">Enosis Solution</h6> -->
+          <p class="text-gray-700 pl-3 lg:max-w-2xl">
+              I like Table Tennis from my childhood. In this one year I had great working environment always. All thw employees are super talented and hardworking. Their policys are also great.</p>
+          <!-- <div class="flex">
+            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Joined at: <span class="text-gray-700">1st january, 2020</span></h6>
+            <h6 class="font-semibold text-base mb-2 text-green-800 pl-3">Leaved at: <span class="text-gray-700">1st january, 2021</span></h6>
+            <div>
+              <input type="checkbox" class="checked:bg-green-800 m-1.5 ml-5">
+              <label for="checkbox" class="text-gray-700 font-semibold text-base">I currently work here.</label>
+            </div>
+            
+          </div> -->
+
+          <div class="pl-3 mt-6 text-white">
+            <a href="updateExp.html" class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500">Update</a>
+            <button class="rounded-full bg-green-800 py-1 px-3 hover:bg-green-500 modal-open">Delete</button>
           </div>
         </div>
 
@@ -736,5 +894,47 @@
         </div>
       </footer>
     
+
+      <script>
+        var openmodal = document.querySelectorAll('.modal-open')
+        for (var i = 0; i < openmodal.length; i++) {
+          openmodal[i].addEventListener('click', function(event){
+          event.preventDefault()
+          toggleModal()
+          })
+        }
+        
+        const overlay = document.querySelector('.modal-overlay')
+        overlay.addEventListener('click', toggleModal)
+        
+        var closemodal = document.querySelectorAll('.modal-close')
+        for (var i = 0; i < closemodal.length; i++) {
+          closemodal[i].addEventListener('click', toggleModal)
+        }
+        
+        document.onkeydown = function(evt) {
+          evt = evt || window.event
+          var isEscape = false
+          if ("key" in evt) {
+          isEscape = (evt.key === "Escape" || evt.key === "Esc")
+          } else {
+          isEscape = (evt.keyCode === 27)
+          }
+          if (isEscape && document.body.classList.contains('modal-active')) {
+          toggleModal()
+          }
+        };
+        
+        
+        function toggleModal () {
+          const body = document.querySelector('body')
+          const modal = document.querySelector('.modal')
+          modal.classList.toggle('opacity-0')
+          modal.classList.toggle('pointer-events-none')
+          body.classList.toggle('modal-active')
+        }
+        
+         
+      </script>
 </body>
 </html>
