@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myProgrammes</title>
+    <style>
+      header {
+        background: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_933383882_2000133420009280345_410292.jpg");
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-white shadow-lg fixed inset-x-0 top-0 bg-transparent z-10">
+      <div class="max-w-6xl mx-auto px-4 py-3">
+        <div class="flex justify-between">
+          <div>
+            <!-- Website Logo -->
+            <a href="#" class="flex items-center py-4 px-2">
+              <!-- <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2"> -->
+              <span class="font-bold text-4xl text-green-500"
+                >Luminar
+                <small class="text-sm text-black font-bold"
+                  >Teach & Learn</small
+                ></span
+              >
+            </a>
+          </div>
+          <!-- Primary Navbar items -->
+          <div class="hidden md:flex ml-auto items-center space-x-1">
+            <a
+              href="users.html"
+              class="
+                py-2
+                px-2
+                text-green-500
+                border-b-4 border-green-500
+                font-semibold
+              "
+              >Users</a
+            >
+            <a
+              href="myProgrammes.html"
+              class="
+                py-2
+                px-2
+                text-gray-500
+                font-semibold
+                hover:text-green-500
+                transition
+                duration-300
+              "
+              >My Programs</a
+            >
+            <a
+              href="inbox.html"
+              class="
+                py-2
+                px-2
+                text-gray-500
+                font-semibold
+                hover:text-green-500
+                transition
+                duration-300
+              "
+              >inbox</a
+            >
+            <a
+              href="profile.html"
+              class="
+                py-2
+                px-2
+                text-gray-500
+                font-semibold
+                hover:text-green-500
+                transition
+                duration-300
+              "
+              >Profile</a
+            >
+            <a
+              href="notification.html"
+              class="
+                py-2
+                px-2
+                text-2xl text-green-500
+                font-bold
+                hover:text-green-400
+                transition
+                duration-300
+              "
+              ><i class="fas fa-bell"></i
+            ></a>
+
+            <a
+              href="contact.html"
+              class="
+                py-2
+                px-2
+                text-gray-500
+                font-semibold
+                hover:text-green-500
+                transition
+                duration-300
+              "
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Secondary Navbar items -->
+          <div class="hidden md:flex items-center space-x-3">
+            <a
+              href="login.html"
+              class="
+                py-2
+                px-5
+                font-medium
+                text-gray-500
+                rounded
+                hover:bg-green-500 hover:text-white
+                transition
+                duration-300
+              "
+              >Log In</a
+            >
+            <a
+              href="signup.html"
+              class="
+                py-2
+                px-5
+                font-medium
+                text-white
+                bg-green-500
+                rounded
+                hover:bg-green-400
+                transition
+                duration-300
+              "
+              >Sign Up</a
+            >
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-500 hover:text-green-500"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu py-5">
+        <ul class="">
+          <li class="active">
+            <a
+              href="users.html"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                text-white
+                bg-green-500
+                font-semibold
+              "
+              >Users</a
+            >
+          </li>
+          <li>
+            <a
+              href="myProgrammes.html"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                text-green-800
+                hover:bg-green-500 hover:text-white
+                transition
+                duration-300
+              "
+              >My Programs</a
+            >
+          </li>
+          <li>
+            <a
+              href="inbox.html"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                text-green-800
+                hover:bg-green-500 hover:text-white
+                transition
+                duration-300
+              "
+              >Inbox</a
+            >
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                text-green-800
+                hover:bg-green-500 hover:text-white
+                transition
+                duration-300
+              "
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a
+              href="notification.html"
+              class="
+                py-2
+                px-2
+                text-2xl text-green-500
+                font-bold
+                hover:text-green-400
+                transition
+                duration-300
+              "
+              ><i class="fas fa-bell"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                text-green-800
+                hover:bg-green-500 hover:text-white
+                transition
+                duration-300
+              "
+              >Contact Us</a
+            >
+          </li>
+          <li class="mb-5 ml-2">
+            <a
+              href="login.html"
+              class="
+                py-2
+                px-5
+                font-medium
+                text-gray-500
+                rounded
+                hover:bg-green-500 hover:text-white
+                transition
+                duration-300
+              "
+              >Log In</a
+            >
+          </li>
+          <li class="mb-5 ml-2">
+            <a
+              href="signup.html"
+              class="
+                py-2
+                px-5
+                font-medium
+                text-white
+                bg-green-500
+                rounded
+                hover:bg-green-400
+                transition
+                duration-300
+              "
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+
+    <main>
+      <div class="mt-16 sm:mt-24 mx-auto grid grid-cols-3">
+        <div class="bg-green-400 bg-opacity-50 pt-5" style="overflow-y: auto; overflow-x: hidden; height: 900px;">
+          <div
+            class="
+              flex
+              ml-4
+              p-5
+              flex-col
+              md:flex-row
+              space-x-4
+              items-center
+              shadow-xl
+              max-w-sm
+              rounded-md
+            "
+          >
+            <img
+              src="image/kaniz.jpg"
+              alt="image"
+              class="h-8 w-8 rounded-full"
+            />
+            <div>
+              <h1 class="text-black font-bold text-2xl">Elite Django</h1>
+              <h2 class="text-black font-semibold text-xl">
+                By: Shourav Ahmed
+              </h2>
+              <p class="mt-1 text-gray-600 text-sm cursor-pointer">
+                k.f.mim007@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div class="container flex mt-16 px-4 sm:px-3 lg:pr-16 md:ml-1">
+            <h1
+              class="
+                text-black
+                font-bold
+                text-3xl
+                mx-auto
+                border-b-2
+                pb-2
+                border-green-800
+              "
+            >
+              My Tasks
+            </h1>
+          </div>
+
+          <div class="mt-16 mb-16">
+            
+              <div
+                class="
+                  flex
+                  ml-4
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  shadow-xl
+                  max-w-sm
+                  rounded-md
+                "
+              >
+                <div class="w-10/12">
+                  <h2 class="text-black font-semibold text-xl">
+                    Install and running the django server
+                  </h2>
+                  <p class="mt-1 text-gray-600 text-base cursor-pointer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores commodi impedit, doloremque quidem veniam excepturi.
+                  </p>
+                  <p class="mt-2 text-gray-600 text-sm cursor-pointer">
+                    Deadline: 12 January, 2022
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="
+                    text-green-800
+                    font-bold
+                    underline
+                    "
+                    >Submitted for review</a
+                  >
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  ml-4
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  shadow-xl
+                  max-w-sm
+                  rounded-md
+                "
+              >
+                <div class="w-10/12">
+                  <h2 class="text-black font-semibold text-xl">
+                    Install and running the django server
+                  </h2>
+                  <p class="mt-1 text-gray-600 text-base cursor-pointer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores commodi impedit, doloremque quidem veniam excepturi.
+                  </p>
+                  <p class="mt-2 text-gray-600 text-sm cursor-pointer">
+                    Deadline: 12 January, 2022
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="
+                    text-green-800
+                    font-bold
+                    underline
+                    "
+                    >Submitted for review</a
+                  >
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  ml-4
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  shadow-xl
+                  max-w-sm
+                  rounded-md
+                "
+              >
+                <div class="w-10/12">
+                  <h2 class="text-black font-semibold text-xl">
+                    Install and running the django server
+                  </h2>
+                  <p class="mt-1 text-gray-600 text-base cursor-pointer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores commodi impedit, doloremque quidem veniam excepturi.
+                  </p>
+                  <p class="mt-2 text-gray-600 text-sm cursor-pointer">
+                    Deadline: 12 January, 2022
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="
+                    text-green-800
+                    font-bold
+                    underline
+                    "
+                    >Submitted for review</a
+                  >
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  ml-4
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  shadow-xl
+                  max-w-sm
+                  rounded-md
+                "
+              >
+                <div class="w-10/12">
+                  <h2 class="text-black font-semibold text-xl">
+                    Install and running the django server
+                  </h2>
+                  <p class="mt-1 text-gray-600 text-base cursor-pointer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores commodi impedit, doloremque quidem veniam excepturi.
+                  </p>
+                  <p class="mt-2 text-gray-600 text-sm cursor-pointer">
+                    Deadline: 12 January, 2022
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="
+                    text-green-800
+                    font-bold
+                    underline
+                    "
+                    >Submitted for review</a
+                  >
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  ml-4
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  shadow-xl
+                  max-w-sm
+                  rounded-md
+                "
+              >
+                <div class="w-10/12">
+                  <h2 class="text-black font-semibold text-xl">
+                    Install and running the django server
+                  </h2>
+                  <p class="mt-1 text-gray-600 text-base cursor-pointer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores commodi impedit, doloremque quidem veniam excepturi.
+                  </p>
+                  <p class="mt-2 text-gray-600 text-sm cursor-pointer">
+                    Deadline: 12 January, 2022
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="
+                    text-green-800
+                    font-bold
+                    underline
+                    "
+                    >Submitted for review</a
+                  >
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  ml-4
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  shadow-xl
+                  max-w-sm
+                  rounded-md
+                "
+              >
+                <div class="w-10/12">
+                  <h2 class="text-black font-semibold text-xl">
+                    Install and running the django server
+                  </h2>
+                  <p class="mt-1 text-gray-600 text-base cursor-pointer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores commodi impedit, doloremque quidem veniam excepturi.
+                  </p>
+                  <p class="mt-2 text-gray-600 text-sm cursor-pointer">
+                    Deadline: 12 January, 2022
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="
+                    text-green-800
+                    font-bold
+                    underline
+                    "
+                    >Submitted for review</a
+                  >
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  ml-4
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  shadow-xl
+                  max-w-sm
+                  rounded-md
+                "
+              >
+                <div class="w-10/12">
+                  <h2 class="text-black font-semibold text-xl">
+                    Install and running the django server
+                  </h2>
+                  <p class="mt-1 text-gray-600 text-base cursor-pointer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores commodi impedit, doloremque quidem veniam excepturi.
+                  </p>
+                  <p class="mt-2 text-gray-600 text-sm cursor-pointer">
+                    Deadline: 12 January, 2022
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="
+                    text-green-800
+                    font-bold
+                    underline
+                    "
+                    >Submitted for review</a
+                  >
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  ml-4
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  shadow-xl
+                  max-w-sm
+                  rounded-md
+                "
+              >
+                <div class="w-10/12">
+                  <h2 class="text-black font-semibold text-xl">
+                    Install and running the django server
+                  </h2>
+                  <p class="mt-1 text-gray-600 text-base cursor-pointer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores commodi impedit, doloremque quidem veniam excepturi.
+                  </p>
+                  <p class="mt-2 text-gray-600 text-sm cursor-pointer">
+                    Deadline: 12 January, 2022
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="
+                    text-green-800
+                    font-bold
+                    underline
+                    "
+                    >Submitted for review</a
+                  >
+                </div>
+              </div>
+              
+            
+            
+            
+          </div>
+        </div>
+        <div class="col-span-2 flex flex-col" style="height: 900px;">
+          <div
+            class="
+              flex
+              p-5
+              flex-col
+              md:flex-row
+              space-x-4
+              items-center
+              shadow-xl
+              max-w-fit
+              rounded-md
+              fixed
+              top-34
+              left-1/3
+              right-0
+              bg-white
+            "
+          >
+            <img
+              src="image/kaniz.jpg"
+              alt="image"
+              class="h-14 w-14 rounded-full"
+            />
+            <div>
+              <h2 class="text-black font-semibold text-xl">Sourav Ahmed</h2>
+            </div>
+          </div>
+          <div class="mt-36">
+            <div class="user">
+              <div
+                class="
+                  flex
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  max-w
+                  rounded-md
+                "
+              >
+                <img
+                  src="image/kaniz.jpg"
+                  alt="image"
+                  class="h-14 w-14 rounded-full"
+                />
+                <div class="bg-gray-400 bg-opacity-50 p-2 rounded-md">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Atque, expedita.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="friend">
+              <div
+                class="
+                  flex
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  justify-end
+                  items-center
+                  max-w
+                  rounded-md
+                "
+              >
+                <div class="bg-green-400 bg-opacity-50 p-2 rounded-md">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Atque, expedita.
+                  </p>
+                </div>
+                <img
+                  src="image/kaniz.jpg"
+                  alt="image"
+                  class="h-14 w-14 rounded-full"
+                />
+              </div>
+            </div>
+            <div class="user">
+              <div
+                class="
+                  flex
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  max-w
+                  rounded-md
+                "
+              >
+                <img
+                  src="image/kaniz.jpg"
+                  alt="image"
+                  class="h-14 w-14 rounded-full"
+                />
+                <div class="bg-gray-400 bg-opacity-50 p-2 rounded-md">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Atque, expedita.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="friend">
+              <div
+                class="
+                  flex
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  justify-end
+                  items-center
+                  max-w
+                  rounded-md
+                "
+              >
+                <div class="bg-green-400 bg-opacity-50 p-2 rounded-md">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Atque, expedita.
+                  </p>
+                </div>
+                <img
+                  src="image/kaniz.jpg"
+                  alt="image"
+                  class="h-14 w-14 rounded-full"
+                />
+              </div>
+            </div>
+            <div class="user">
+              <div
+                class="
+                  flex
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  max-w
+                  rounded-md
+                "
+              >
+                <img
+                  src="image/kaniz.jpg"
+                  alt="image"
+                  class="h-14 w-14 rounded-full"
+                />
+                <div class="bg-gray-400 bg-opacity-50 p-2 rounded-md">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Atque, expedita.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="friend">
+              <div
+                class="
+                  flex
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  justify-end
+                  items-center
+                  max-w
+                  rounded-md
+                "
+              >
+                <div class="bg-green-400 bg-opacity-50 p-2 rounded-md">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Atque, expedita.
+                  </p>
+                </div>
+                <img
+                  src="image/kaniz.jpg"
+                  alt="image"
+                  class="h-14 w-14 rounded-full"
+                />
+              </div>
+            </div>
+            <div class="user">
+              <div
+                class="
+                  flex
+                  p-5
+                  flex-col
+                  md:flex-row
+                  space-x-4
+                  items-center
+                  max-w
+                  rounded-md
+                "
+              >
+                <img
+                  src="image/kaniz.jpg"
+                  alt="image"
+                  class="h-14 w-14 rounded-full"
+                />
+                <div class="bg-gray-400 bg-opacity-50 p-2 rounded-md">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Atque, expedita.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wr-msg pl-8 pt-5 sticky top-60 bottom-0 mb-0">
+            <input
+              type="text"
+              class="border-2 border-green-800 p-1 rounded-full w-4/6"
+              id="fname"
+              name="fname"
+            />
+            <a href="#"
+              ><i class="fas fa-paper-plane text-green-800 text-2xl ml-5"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-green-900 dark:bg-gray-800">
+      <div class="container pt-24 px-6 pb-8 mx-auto">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div>
+            <div class="text-3xl font-extrabold text-white uppercase">
+              Luminar
+            </div>
+
+            <p
+              class="
+                block
+                mt-5
+                text-lg
+                font-medium
+                text-gray-500
+                duration-700
+                dark:text-gray-300
+                hover:text-gray-400
+                dark:hover:text-gray-200
+                hover:underline
+              "
+            >
+              Great Platform for find your mentor in online. Only mentors can
+              help you make the best use of your pecious time
+            </p>
+          </div>
+
+          <div>
+            <div class="text-lg font-bold text-white uppercase">Site</div>
+
+            <a
+              href="#"
+              class="
+                block
+                mt-5
+                text-base
+                font-medium
+                text-gray-500
+                duration-700
+                dark:text-gray-300
+                hover:text-gray-400
+                dark:hover:text-gray-200
+                hover:underline
+              "
+            >
+              About
+            </a>
+            <a
+              href="#"
+              class="
+                block
+                mt-3
+                text-base
+                font-medium
+                text-gray-500
+                duration-700
+                dark:text-gray-300
+                hover:text-gray-400
+                dark:hover:text-gray-200
+                hover:underline
+              "
+            >
+              Topics
+            </a>
+            <a
+              href="#"
+              class="
+                block
+                mt-3
+                text-base
+                font-medium
+                text-gray-500
+                duration-700
+                dark:text-gray-300
+                hover:text-gray-400
+                dark:hover:text-gray-200
+                hover:underline
+              "
+            >
+              Mentors
+            </a>
+            <a
+              href="#"
+              class="
+                block
+                mt-3
+                text-base
+                font-medium
+                text-gray-500
+                duration-700
+                dark:text-gray-300
+                hover:text-gray-400
+                dark:hover:text-gray-200
+                hover:underline
+              "
+            >
+              Contact
+            </a>
+          </div>
+
+          <div>
+            <div class="text-lg font-bold text-white uppercase">Platform</div>
+
+            <a
+              href="#"
+              class="
+                block
+                mt-5
+                text-base
+                font-medium
+                text-gray-500
+                duration-700
+                dark:text-gray-300
+                hover:text-gray-400
+                dark:hover:text-gray-200
+                hover:underline
+              "
+            >
+              Terms & Policy
+            </a>
+            <a
+              href="#"
+              class="
+                block
+                mt-3
+                text-base
+                font-medium
+                text-gray-500
+                duration-700
+                dark:text-gray-300
+                hover:text-gray-400
+                dark:hover:text-gray-200
+                hover:underline
+              "
+            >
+              FAQs
+            </a>
+            <a
+              href="#"
+              class="
+                block
+                mt-3
+                text-base
+                font-medium
+                text-gray-500
+                duration-700
+                dark:text-gray-300
+                hover:text-gray-400
+                dark:hover:text-gray-200
+                hover:underline
+              "
+            >
+              Office address
+            </a>
+          </div>
+
+          <div>
+            <div class="text-lg font-bold text-white uppercase">Subscribe</div>
+
+            <div
+              class="
+                bg-white
+                border
+                rounded-md
+                focus-within:ring focus-within:border-blue-500
+                mt-5
+              "
+            >
+              <div class="flex flex-wrap justify-between md:flex-row">
+                <input
+                  type="email"
+                  class="
+                    p-2
+                    m-1
+                    text-sm text-gray-700
+                    appearance-none
+                    focus:outline-none focus:placeholder-transparent
+                  "
+                  placeholder="Enter your email"
+                  aria-label="Enter your email"
+                />
+                <button
+                  class="
+                    w-full
+                    p-2
+                    m-1
+                    text-sm
+                    font-semibold
+                    text-white
+                    uppercase
+                    transition-colors
+                    duration-200
+                    transform
+                    bg-gray-800
+                    rounded-md
+                    lg:w-auto
+                    hover:bg-gray-700
+                  "
+                >
+                  subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-10 dark:border-gray-700" />
+
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <p class="text-sm text-gray-400">
+            © Copyright 2021 Luminar. All Rights Reserved.
+          </p>
+
+          <div class="flex mt-3 -mx-2 sm:mt-0">
+            <a
+              href="#"
+              class="
+                mx-2
+                text-gray-400
+                hover:text-gray-500
+                dark:hover:text-gray-300
+              "
+              aria-label="Facebook"
+            >
+              <svg
+                class="w-7 h-7 fill-current"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"
+                ></path>
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              class="
+                mx-2
+                text-gray-400
+                hover:text-gray-500
+                dark:hover:text-gray-300
+              "
+              aria-label="Github"
+            >
+              <svg
+                class="w-7 h-7 fill-current"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var openmodal = document.querySelectorAll(".modal-open");
+      for (var i = 0; i < openmodal.length; i++) {
+        openmodal[i].addEventListener("click", function (event) {
+          event.preventDefault();
+          toggleModal();
+        });
+      }
+
+      const overlay = document.querySelector(".modal-overlay");
+      overlay.addEventListener("click", toggleModal);
+
+      var closemodal = document.querySelectorAll(".modal-close");
+      for (var i = 0; i < closemodal.length; i++) {
+        closemodal[i].addEventListener("click", toggleModal);
+      }
+
+      document.onkeydown = function (evt) {
+        evt = evt || window.event;
+        var isEscape = false;
+        if ("key" in evt) {
+          isEscape = evt.key === "Escape" || evt.key === "Esc";
+        } else {
+          isEscape = evt.keyCode === 27;
+        }
+        if (isEscape && document.body.classList.contains("modal-active")) {
+          toggleModal();
+        }
+      };
+
+      function toggleModal() {
+        const body = document.querySelector("body");
+        const modal = document.querySelector(".modal");
+        modal.classList.toggle("opacity-0");
+        modal.classList.toggle("pointer-events-none");
+        body.classList.toggle("modal-active");
+      }
+    </script>
+  </body>
+</html>
