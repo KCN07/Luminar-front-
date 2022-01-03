@@ -17,12 +17,12 @@
     />
   </head>
   <body>
-    <nav class="bg-white shadow-lg  ">
+    <nav class="bg-white shadow-lg fixed inset-x-0 top-0 bg-transparent z-10">
       <div class="max-w-6xl mx-auto px-4 py-3">
         <div class="flex justify-between">
           <div>
             <!-- Website Logo -->
-            <a href="#" class="flex items-center py-4 px-2">
+            <a href="dashboard.html" class="flex items-center py-4 px-2">
               <!-- <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2"> -->
               <span class="font-bold text-4xl text-green-500"
                 >Luminar
@@ -146,176 +146,176 @@
             >
           </div>
           <!-- Mobile menu button -->
-         
-          <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
-              <svg
-                class="w-6 h-6 text-gray-500 hover:text-green-500"
-                x-show="!showMenu"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
+          <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg
+              class="w-6 h-6 text-gray-500 hover:text-green-500"
+              x-show="!showMenu"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
       </div>
-      <!-- mobile menu -->
-      <div class="hidden mobile-menu py-5">
-        <ul class="">
-          <li class="active">
-            <a
-              href="users.html"
-              class="
-                block
-                text-sm
-                px-2
-                py-4
-                text-white
-                bg-green-500
-                font-semibold
-              "
-              >Users</a
-            >
-          </li>
-          <li>
-            <a
-              href="myProgrammes.html"
-              class="
-                block
-                text-sm
-                px-2
-                py-4
-                text-green-800
-                hover:bg-green-500
-                hover:text-white
-                transition
-                duration-300
-              "
-              >My Programs</a
-            >
-          </li>
-          <li>
-            <a
-              href="inbox.html"
-              class="
-                block
-                text-sm
-                px-2
-                py-4
-                text-green-800
-                hover:bg-green-500
-                hover:text-white
-                transition
-                duration-300
-              "
-              >Inbox</a
-            >
-          </li>
-          <li>
-            <a
-              href="profile.html"
-              class="
-                block
-                text-sm
-                px-2
-                py-4
-                text-green-800
-                hover:bg-green-500
-                hover:text-white
-                transition
-                duration-300
-              "
-              >Profile</a
-            >
-          </li>
-          <li>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu py-5">
+      <ul class="">
+        <li class="active">
           <a
-              href="notification.html"
-              class="
-                py-2
-                px-2
-                text-2xl text-green-500
-                font-bold
-                hover:text-green-400
-                transition
-                duration-300
-              "
-              ><i class="fas fa-bell"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="
-                block
-                text-sm
-                px-2
-                py-4
-                text-green-800
-                hover:bg-green-500
-                hover:text-white
-                transition
-                duration-300
-              "
-              >Contact Us</a
-            >
-          </li>
-          <li class="mb-5 ml-2">
-            <a
-              href="login.html"
-              class="
-                py-2
-                px-5
-                
-                font-medium
-                text-gray-500
-                rounded
-                hover:bg-green-500 hover:text-white
-                transition
-                duration-300
-              "
-              >Log In</a
-            >
-            
-          </li>
-          <li class="mb-5 ml-2">
-            <a
-              href="signup.html"
-              class="
-                py-2
-                px-5
-                
-                font-medium
-                text-white
-                bg-green-500
-                rounded
-                hover:bg-green-400
-                transition
-                duration-300
-              "
-              >Sign Up</a
-            >
-          </li>
-        </ul>
-      </div>
-      <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
+            href="users.html"
+            class="
+              block
+              text-sm
+              px-2
+              py-4
+              text-white
+              bg-green-500
+              font-semibold
+            "
+            >Users</a
+          >
+        </li>
+        <li>
+          <a
+            href="myProgrammes.html"
+            class="
+              block
+              text-sm
+              px-2
+              py-4
+              text-green-800
+              hover:bg-green-500
+              hover:text-white
+              transition
+              duration-300
+            "
+            >My Programs</a
+          >
+        </li>
+        <li>
+          <a
+            href="inbox.html"
+            class="
+              block
+              text-sm
+              px-2
+              py-4
+              text-green-800
+              hover:bg-green-500
+              hover:text-white
+              transition
+              duration-300
+            "
+            >Inbox</a
+          >
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="
+              block
+              text-sm
+              px-2
+              py-4
+              text-green-800
+              hover:bg-green-500
+              hover:text-white
+              transition
+              duration-300
+            "
+            >Profile</a
+          >
+        </li>
+        <li>
+        <a
+            href="notification.html"
+            class="
+              py-2
+              px-2
+              text-2xl text-green-500
+              font-bold
+              hover:text-green-400
+              transition
+              duration-300
+            "
+            ><i class="fas fa-bell"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="contact.html"
+            class="
+              block
+              text-sm
+              px-2
+              py-4
+              text-green-800
+              hover:bg-green-500
+              hover:text-white
+              transition
+              duration-300
+            "
+            >Contact Us</a
+          >
+        </li>
+        <li class="mb-5 ml-2">
+          <a
+            href="login.html"
+            class="
+              py-2
+              px-5
+              
+              font-medium
+              text-gray-500
+              rounded
+              hover:bg-green-500 hover:text-white
+              transition
+              duration-300
+            "
+            >Log In</a
+          >
+          
+        </li>
+        <li class="mb-5 ml-2">
+          <a
+            href="signup.html"
+            class="
+              py-2
+              px-5
+              
+              font-medium
+              text-white
+              bg-green-500
+              rounded
+              hover:bg-green-400
+              transition
+              duration-300
+            "
+            >Sign Up</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
 
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
-      </script>
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
     </nav>
     
     <main>
-      <div class="container mx-auto">
+      <div class="container mx-auto mt-16 sm:mt-52">
         <p class="text-5xl font-bold text-center mt-8 mb-5">
           Search a <span class="text-green-800">User</span>
         </p>
